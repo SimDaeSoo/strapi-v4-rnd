@@ -8,7 +8,7 @@ module.exports = ({ env }) => ({
       user: env('DATABASE_USERNAME', 'user'),
       password: env('DATABASE_PASSWORD', 'password')
     },
-    debug: true,
+    debug: false,
     pool: {
       min: 0,
       max: 10

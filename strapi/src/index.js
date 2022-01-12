@@ -19,7 +19,12 @@ module.exports = {
    * run jobs, or perform some special logic.
    */
   bootstrap({ strapi }) {
-    console.log(strapi.config.redis);
-    console.log(strapi.db);
+    const testFunction = async () => {
+      console.log(strapi.config.redis);
+      const rawResults = await strapi.db.connection.raw('SELECT * FROM admin_users');
+      console.log(rawResults);
+    };
+
+    testFunction();
   },
 };
