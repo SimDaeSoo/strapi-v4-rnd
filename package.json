@@ -1,0 +1,15 @@
+{
+  "name": "strapi-v4-rnd",
+  "version": "0.0.0",
+  "private": false,
+  "description": "",
+  "scripts": {
+    "dev": "docker-compose up -d && cd strapi && yarn develop"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.x.x <=16.x.x",
+    "npm": "please-use-yarn",
+    "yarn": "<2.x.x"
+  }
+}
